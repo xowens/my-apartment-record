@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Unit | Residences at Saltillo, Austin TX</title>
+<meta name="description" content="Dated, photo-documented record of issues within a specific unit at Residences at Saltillo, Austin, TX.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Independent resident record</div>
+    <h1>My Unit</h1>
+    <p class="subline">
+      Issues specific to my individual unit at Residences at Saltillo &mdash; separate from
+      shared/common-area conditions, which are on the <a href="community.html">Community</a>
+      page. Each entry states what was observed and when, whether it was reported through
+      the maintenance portal, and the response (if any).
+    </p>
+    <nav class="sitenav">
+      <a href="index.html">Summary</a>
+      <a href="community.html">Community</a>
+      <a href="my-unit.html" aria-current="page">My Unit</a>
+      <a href="resident-reports.html">Resident Reports</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============================================================
+    TEMPLATE: duplicate a whole <article class="condition-entry">
+    block for each new issue in your unit.
+      - id: short unique identifier, used for linking from index.html
+      - topic-tag: short category, e.g. "Plumbing", "HVAC", "Pests"
+      - "Reported" line: whether/how it was reported and any response
+      - Photo: put the file in /evidence/<folder>/, update the src,
+        or delete the whole entry-photo block if you have no photo.
+  ============================================================= -->
+
+  <article class="condition-entry" id="water-leak">
+    <div class="timeline-date">First noted Mar 3, 2026</div>
+    <div class="timeline-body">
+      <span class="topic-tag">Plumbing</span>
+      <h3>Recurring water leak, ceiling</h3>
+      <p><strong>Observed:</strong> Water stain appeared on the bedroom ceiling. A maintenance visit patched the drywall without identifying the source. The leak recurred twice more over the following month.</p>
+      <p><strong>Reported:</strong> Submitted via maintenance portal same day. Three maintenance visits logged; underlying source not yet identified as of this writing.</p>
+      <div class="entry-photo">
+        <img src="evidence/2026-03-water-leak/ceiling-stain.jpg" alt="Water stain on bedroom ceiling" loading="lazy">
+        <div class="photo-caption">Mar 3, 2026 &middot; bedroom ceiling</div>
+      </div>
+      <div class="timeline-meta">
+        <span class="stamp open">Unresolved</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="condition-entry" id="no-heat">
+    <div class="timeline-date">Jan 18, 2026</div>
+    <div class="timeline-body">
+      <span class="topic-tag">HVAC</span>
+      <h3>No heat for four days</h3>
+      <p><strong>Observed:</strong> Heating stopped functioning during a cold snap.</p>
+      <p><strong>Reported:</strong> Reported by phone and portal same day. A space heater was provided two days later; full repair completed after four days total.</p>
+      <div class="timeline-meta">
+        <span class="stamp resolved">Resolved after 4 days</span>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    This is an independent record maintained by a resident and is not affiliated with Residences at Saltillo or its management company. Entries reflect the maintainer's direct experience and documentation.
+  </div>
+</footer>
+
+</body>
+</html>
