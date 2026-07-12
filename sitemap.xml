@@ -4,9 +4,12 @@
     <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/</loc>
   </url>
   <url>
-    <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/timeline.html</loc>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/community.html</loc>
   </url>
   <url>
-    <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/evidence.html</loc>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/my-unit.html</loc>
+  </url>
+  <url>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/resident-reports.html</loc>
   </url>
 </urlset>
