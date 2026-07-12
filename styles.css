@@ -219,6 +219,17 @@ section h2.section-title {
   border-top: 1px solid var(--rule);
 }
 
+/* Wrap 2+ .entry-photo blocks in a .photo-grid to lay them out
+   side by side instead of each one stacking full-width. */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.photo-grid .entry-photo { margin-top: 0; }
+.photo-grid .entry-photo img { max-height: 200px; }
+
 /* ---------- Topic index (homepage) ---------- */
 .topic-list {
   list-style: none;
