@@ -4,32 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ============================================================
-  SEO — EDIT THESE FIRST. Put the exact apartment complex name
-  and city in the <title> and <meta name="description">. These
-  two lines are what Google shows in search results, and matching
-  the exact name people search for is the single biggest factor
-  in whether this page gets found.
-============================================================= -->
-<title> What I Wish I Knew Before Moving to REsidences at Saltillo | Austin, TX</title>
-<meta name="description" content="A dated, evidence-based record of unresolved maintenance issues at Residences at Saltillo in Austin, TX. Photos, timelines, and maintenance portal screenshots for prospective tenants doing due diligence.">
+<title>Residences at Saltillo, Austin TX — Resident-Documented Property Conditions</title>
+<meta name="description" content="A dated, photo-documented record of property conditions, unit issues, and resident experiences at Residences at Saltillo in Austin, TX — things prospective tenants may want to know before signing a lease.">
 
-<!-- Open Graph: controls the preview card when this link is shared -->
-<meta property="og:title" content="Residences at Saltillo Maintenance Record">
-<meta property="og:description" content="Documented, dated maintenance failures at Residences at Saltillo, Austin, TX. Read before you sign a lease.">
+<meta property="og:title" content="Residences at Saltillo — Resident-Documented Property Conditions">
+<meta property="og:description" content="Dated, photo-documented observations at Residences at Saltillo, Austin, TX. Read before you sign a lease.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/">
 
 <link rel="stylesheet" href="styles.css">
 
-<!-- Structured data helps Google understand this is a factual record page.
-     Fill in the same name/address you use everywhere else on the site. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Residences at Saltillo Maintenance Record",
-  "description": "Dated public record of maintenance issues at Residences at Saltillo, Austin, TX, maintained for prospective tenants.",
+  "name": "Residences at Saltillo — Resident-Documented Property Conditions",
+  "description": "Dated public record of property conditions, unit issues, and resident experiences at Residences at Saltillo, Austin, TX.",
   "about": {
     "@type": "ApartmentComplex",
     "name": "Residences at Saltillo",
@@ -42,14 +32,14 @@
 
 <header class="masthead">
   <div class="wrap">
-    <div class="eyebrow">Public maintenance record &middot; est. July 2026</div>
-    <h1>Residences at Saltillo Maintenance Record</h1>
-    <p class="subline">A dated, sourced log of maintenance issues at Residences at Saltillo, 1211 E. 5th Street, Austin, TX 78702. Maintained independently by a current or former resident for the benefit of prospective tenants.</p>
+    <div class="eyebrow">Independent resident record &middot; est. [Month Year]</div>
+    <h1>Residences at Saltillo: What Prospective Tenants Should Know</h1>
+    <p class="subline">A dated, photo-documented record covering the community grounds, one resident's unit, and reports from other residents at Residences at Saltillo, 1211 E. 5th Street, Austin, TX 78702.</p>
     <nav class="sitenav">
       <a href="index.html" aria-current="page">Summary</a>
-      <a href="timeline.html">Unit Timeline</a>
-      <a href="conditions.html">Property Conditions</a>
-      <a href="evidence.html">Evidence Log</a>
+      <a href="community.html">Community</a>
+      <a href="my-unit.html">My Unit</a>
+      <a href="resident-reports.html">Resident Reports</a>
     </nav>
   </div>
 </header>
@@ -59,62 +49,35 @@
   <div class="about-block">
     <h2>Why this record exists</h2>
     <p>
-      This site documents two kinds of things: maintenance issues reported to
-      Residences at Saltillo management for individual units (see the
-      <a href="timeline.html">unit timeline</a>), and the general, observable condition
-      of shared spaces like hallways, trash areas, and amenities (see
-      <a href="conditions.html">property conditions</a>) &mdash; whether or not those
-      were ever filed as a maintenance ticket. It exists so prospective tenants can make
-      an informed decision before signing a lease. Every entry is dated and, where
-      possible, backed by a photo or document. Opinions and commentary, where included,
-      are labeled and kept clearly separate from the factual record.
+      This site documents things about Residences at Saltillo that aren't always obvious
+      on a leasing tour or in the marketing photos. It's split into three parts: the
+      condition of shared community spaces, issues specific to one resident's individual
+      unit, and reports contributed by other residents over time. Every entry is dated
+      and, where possible, backed by a photo. Opinions, where included, are labeled and
+      kept clearly separate from the factual observation.
     </p>
   </div>
 
-  <table class="ledger">
-    <caption>Case summary — click a case ID for full detail and evidence</caption>
-    <thead>
-      <tr>
-        <th>Case</th>
-        <th>Issue</th>
-        <th>Reported</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- ============================================================
-        TEMPLATE: duplicate this <tr> block for each issue.
-        Give each one a unique case ID, e.g. MX-2026-001, MX-2026-002.
-        Link href should point to an anchor on timeline.html (#mx-2026-001)
-      ============================================================= -->
-      <tr>
-        <td class="case-id">MX-2026-014</td>
-        <td><a class="case-link" href="timeline.html#mx-2026-014">Recurring water leak, unit ceiling</a></td>
-        <td>Mar 3, 2026</td>
-        <td><span class="stamp open">Unresolved</span></td>
-      </tr>
-      <tr>
-        <td class="case-id">MX-2026-009</td>
-        <td><a class="case-link" href="timeline.html#mx-2026-009">No heat, 4+ days</a></td>
-        <td>Jan 18, 2026</td>
-        <td><span class="stamp pending">Partial fix</span></td>
-      </tr>
-      <tr>
-        <td class="case-id">MX-2025-041</td>
-        <td><a class="case-link" href="timeline.html#mx-2025-041">Broken exterior door lock</a></td>
-        <td>Nov 2, 2025</td>
-        <td><span class="stamp resolved">Resolved</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p style="font-size:14px;color:var(--muted);">See the <a href="timeline.html">full timeline</a> for narrative detail on every case, or the <a href="evidence.html">evidence log</a> for photos and screenshots.</p>
+  <ul class="topic-list">
+    <li>
+      <a href="community.html">Community Conditions</a>
+      <span class="topic-desc">Garage, hallways, courtyards, trash areas, amenities &mdash; the shared grounds</span>
+    </li>
+    <li>
+      <a href="my-unit.html">My Unit</a>
+      <span class="topic-desc">Repair history and issues specific to one resident's apartment</span>
+    </li>
+    <li>
+      <a href="resident-reports.html">Resident Reports</a>
+      <span class="topic-desc">Experiences shared by other current or former residents</span>
+    </li>
+  </ul>
 
 </main>
 
 <footer>
   <div class="wrap">
-    This is an independent record maintained by a resident and is not affiliated with Residences at Saltillo or its management company. All entries reflect the maintainer's direct experience and documentation. Corrections can be requested via [contact method, e.g. an email you control].
+    This is an independent record maintained by a resident and is not affiliated with Residences at Saltillo or its management company. All entries reflect the maintainer's (or contributing residents') direct experience and documentation. Corrections can be requested via [contact method, e.g. an email you control].
   </div>
 </footer>
 
