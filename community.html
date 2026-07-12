@@ -203,5 +203,81 @@
   </div>
 </footer>
 
+  <!-- The Lightbox Overlay Container -->
+<div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightboxImg">
+</div>
+
+<!-- Lightbox Styles -->
+<style>
+.lightbox {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+  cursor: pointer;
+}
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* Make images look clickable and scale slightly on hover */
+.entry-photo img {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.entry-photo img:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+/* Mobile Responsiveness */
+@media only screen and (max-width: 700px){
+  .lightbox-content { width: 95%; padding-top: 20%; }
+}
+</style>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Find all images inside your entry-photo containers
+  const images = document.querySelectorAll(".entry-photo img");
+  const lightbox = document.getElementById("imageLightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  images.forEach(img => {
+    img.addEventListener("click", function() {
+      lightbox.style.display = "block";
+      lightboxImg.src = this.src;
+    });
+  });
+});
+
+// Function to close the overlay
+function closeLightbox() {
+  document.getElementById("imageLightbox").style.display = "none";
+}
+</script>
+
 </body>
 </html>
+
+
