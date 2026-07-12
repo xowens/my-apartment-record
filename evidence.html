@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Log | [Apartment Complex Name] Maintenance Record</title>
+<meta name="description" content="Photos, timelines, and maintenance portal screenshots documenting maintenance issues at [Apartment Complex Name], [City, State].">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Public maintenance record</div>
+    <h1>Evidence Log</h1>
+    <p class="subline">Photos and portal screenshots, dated, one per reported issue. See the <a href="timeline.html">full timeline</a> for narrative context.</p>
+    <nav class="sitenav">
+      <a href="index.html">Summary</a>
+      <a href="timeline.html">Full Timeline</a>
+      <a href="evidence.html" aria-current="page">Evidence Log</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="evidence-grid">
+
+    <!-- ============================================================
+      TEMPLATE: duplicate this <figure> block per photo/screenshot.
+      1. Put the image file inside /evidence/<case-id>/ and point
+         the src at it, e.g. evidence/2026-03-water-leak/photo1.jpg
+      2. Give each figure an id like ev-mx-2026-014-1 so timeline.html
+         can link straight to it.
+    ============================================================= -->
+
+    <figure class="evidence-card" id="ev-mx-2026-014-1">
+      <img src="evidence/2026-03-water-leak/ceiling-stain.jpg" alt="Water stain on bedroom ceiling, Mar 3 2026" loading="lazy">
+      <figcaption class="caption">
+        <div class="date">Mar 3, 2026 &middot; MX-2026-014</div>
+        <p>Initial ceiling stain, photographed the day it was reported.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="evidence-card" id="ev-mx-2026-014-2">
+      <img src="evidence/2026-03-water-leak/portal-screenshot.jpg" alt="Maintenance portal screenshot showing ticket MX-2026-014" loading="lazy">
+      <figcaption class="caption">
+        <div class="date">Mar 3, 2026 &middot; MX-2026-014</div>
+        <p>Maintenance portal ticket confirming date and description of report.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="evidence-card" id="ev-mx-2026-009-1">
+      <img src="evidence/2026-01-no-heat/portal-screenshot.jpg" alt="Maintenance portal screenshot showing ticket MX-2026-009" loading="lazy">
+      <figcaption class="caption">
+        <div class="date">Jan 18, 2026 &middot; MX-2026-009</div>
+        <p>Portal ticket for heating outage, with timestamp.</p>
+      </figcaption>
+    </figure>
+
+  </div>
+
+  <p style="font-size:13px;color:var(--muted);max-width:60ch;">
+    Images are cropped to remove information unrelated to the maintenance issue
+    (e.g. other residents' names or unit numbers) where practical.
+  </p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    This is an independent record maintained by a resident and is not affiliated with [Apartment Complex Name] or its management company.
+  </div>
+</footer>
+
+</body>
+</html>

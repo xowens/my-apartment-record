@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+  SEO — EDIT THESE FIRST. Put the exact apartment complex name
+  and city in the <title> and <meta name="description">. These
+  two lines are what Google shows in search results, and matching
+  the exact name people search for is the single biggest factor
+  in whether this page gets found.
+============================================================= -->
+<title>[APARTMENT COMPLEX NAME] Maintenance Record | [City, State]</title>
+<meta name="description" content="A dated, evidence-based record of unresolved maintenance issues at [Apartment Complex Name] in [City, State]. Photos, timelines, and maintenance portal screenshots for prospective tenants doing due diligence.">
+
+<!-- Open Graph: controls the preview card when this link is shared -->
+<meta property="og:title" content="[Apartment Complex Name] Maintenance Record">
+<meta property="og:description" content="Documented, dated maintenance failures at [Apartment Complex Name], [City, State]. Read before you sign a lease.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Structured data helps Google understand this is a factual record page.
+     Fill in the same name/address you use everywhere else on the site. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "[Apartment Complex Name] Maintenance Record",
+  "description": "Dated public record of maintenance issues at [Apartment Complex Name], [City, State], maintained for prospective tenants.",
+  "about": {
+    "@type": "ApartmentComplex",
+    "name": "[Apartment Complex Name]",
+    "address": "[Full street address, City, State, ZIP]"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Public maintenance record &middot; est. [Month Year]</div>
+    <h1>[Apartment Complex Name] Maintenance Record</h1>
+    <p class="subline">A dated, sourced log of maintenance issues at [Apartment Complex Name], [Full Address, City, State]. Maintained independently by a current or former resident for the benefit of prospective tenants.</p>
+    <nav class="sitenav">
+      <a href="index.html" aria-current="page">Summary</a>
+      <a href="timeline.html">Full Timeline</a>
+      <a href="evidence.html">Evidence Log</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="about-block">
+    <h2>Why this record exists</h2>
+    <p>
+      This site documents maintenance issues reported to [Apartment Complex Name] management,
+      including the dates issues were reported, management's response (or lack of one), and
+      supporting evidence such as photos and maintenance-portal screenshots. It exists so
+      prospective tenants can make an informed decision before signing a lease. Every entry
+      is dated and, where possible, backed by a photo or document. Opinions and commentary,
+      where included, are kept clearly separate from the factual record.
+    </p>
+  </div>
+
+  <table class="ledger">
+    <caption>Case summary — click a case ID for full detail and evidence</caption>
+    <thead>
+      <tr>
+        <th>Case</th>
+        <th>Issue</th>
+        <th>Reported</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ============================================================
+        TEMPLATE: duplicate this <tr> block for each issue.
+        Give each one a unique case ID, e.g. MX-2026-001, MX-2026-002.
+        Link href should point to an anchor on timeline.html (#mx-2026-001)
+      ============================================================= -->
+      <tr>
+        <td class="case-id">MX-2026-014</td>
+        <td><a class="case-link" href="timeline.html#mx-2026-014">Recurring water leak, unit ceiling</a></td>
+        <td>Mar 3, 2026</td>
+        <td><span class="stamp open">Unresolved</span></td>
+      </tr>
+      <tr>
+        <td class="case-id">MX-2026-009</td>
+        <td><a class="case-link" href="timeline.html#mx-2026-009">No heat, 4+ days</a></td>
+        <td>Jan 18, 2026</td>
+        <td><span class="stamp pending">Partial fix</span></td>
+      </tr>
+      <tr>
+        <td class="case-id">MX-2025-041</td>
+        <td><a class="case-link" href="timeline.html#mx-2025-041">Broken exterior door lock</a></td>
+        <td>Nov 2, 2025</td>
+        <td><span class="stamp resolved">Resolved</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:14px;color:var(--muted);">See the <a href="timeline.html">full timeline</a> for narrative detail on every case, or the <a href="evidence.html">evidence log</a> for photos and screenshots.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    This is an independent record maintained by a resident and is not affiliated with [Apartment Complex Name] or its management company. All entries reflect the maintainer's direct experience and documentation. Corrections can be requested via [contact method, e.g. an email you control].
+  </div>
+</footer>
+
+</body>
+</html>
